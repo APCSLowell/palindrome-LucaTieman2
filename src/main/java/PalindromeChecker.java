@@ -36,7 +36,7 @@ public void tester()
   }
 }
 public boolean palindrome(String sWord) {
-  if (onlyLetters(noSpaces(word)).equals(onlyLetters(reverse(noSpaces(word))))) 
+  if (onlyLetters(noSpaces(sWord)).equals(onlyLetters(reverse(noSpaces(sWord))))) 
   return true;
   else 
   return false;
