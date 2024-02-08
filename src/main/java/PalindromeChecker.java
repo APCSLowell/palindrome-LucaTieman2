@@ -48,5 +48,22 @@ public String reverse(String str) {
     sNew = sNew + str.charAt(i);
   }
 }
-
+public String noSpaces(String sWord) {
+  String answer = "";
+  for (int i = 0; i < sWord.length(); i++) {
+    if (sWord.substring(i, i+1).equals(" ") == false) {
+      answer = answer + sWord.charAt(i);
+    }
+  }
+  return answer.toLowerCase();  
+}
+  public String onlyLetters(String sWord) {
+  String answer = "";
+  for (int i = 0; i < sWord.length(); i++) {
+    if (Character.isLetter(sWord.charAt(i))) {
+      answer += sWord.substring(i, i+1);
+    }
+  }
+  return answer  
+}
 }
