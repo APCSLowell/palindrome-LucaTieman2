@@ -50,20 +50,17 @@ public String reverse(String str) {
 }
 public String noSpaces(String sWord) {
   String answer = "";
-  for (int i = 0; i < sWord.length(); i++) {
-    if (sWord.substring(i, i+1).equals(" ") == false) {
-      answer = answer + sWord.charAt(i);
-    }
-  }
-  return answer.toLowerCase();  
+  for (int i = 0; i < sWord.length(); i++) 
+    if (sWord.substring(i, i+1).equals(" ") == false) 
+    answer = answer + sWord.charAt(i);
+    return answer.toLowerCase();  
 }
-  public String onlyLetters(String sWord) {
+  public String onlyLetters(String sString) {
   String answer = "";
-  for (int i = 0; i < sWord.length(); i++) {
-    if (Character.isLetter(sWord.charAt(i))) {
-      answer += sWord.substring(i, i+1);
+  for (int i = 0; i < sString.length(); i++) 
+    if (Character.isLetter(sString.charAt(i))) {
+      answer += sString.substring(i, i+1);
     }
-  }
-  return answer  
+  return answer;  
 }
 }
